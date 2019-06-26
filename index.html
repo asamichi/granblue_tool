@@ -1,0 +1,159 @@
+<html>
+  <!-- 昔の名残のスクリプト
+    javascript:(function(){var temp=document.createElement('textarea');var l=32;var c="abcdefghijklmnopqrstuvwxyz0123456789";c="○o｡..:*☆.。.:*・゜。o○☆.:*ﾟ:.｡:.ﾟ･*:.｡..｡.:*･ﾟ.｡ﾟ+..｡ﾟ+";var cl=c.length;var r="";for(var i=0;i<l;i++){r+=c[Math.floor(Math.random()*cl)]}temp.value=r;temp.selectionStart=0;temp.selectionEnd=temp.value.length;var s=temp.style;s.position='fixed';s.left='-100%';document.body.appendChild(temp);temp.focus();var result=document.execCommand('copy');temp.blur();document.body.removeChild(temp)})(); -->
+<head>
+
+  <title>グラぶる</title>
+
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+
+</head>
+<body>
+  グラブルをツールとか使わずに少し快適にするページ<br><br>
+<a href="javascript:openwin(1);">グラブる</a>
+<a href="javascript:closewin();">オワブる</a><br>
+<a href="javascript:openwin(0);">グラブる</a>(menuのみ　グラブル自体は適当なページ開くと今のウインドウのタブで開きます)<br>
+<a href="./html/skill.html" target="_brank">スキル上げ早見表</a><br>
+
+<hr>
+検索補助機能（おまけ）<br>
+
+
+<form name="form1" id="id_form">
+検索語句：<input type="form" id="free_form">
+<input type="button" id="click_ref" value="語句に追加せず反映">
+<input type="button" id="button_gen" value="検索語句追加">
+<br>
+
+<select name="select_s">
+    <option value=" -gamewith -kamigame -gameranbu -altema.jp">
+      企業wiki除外</option>
+    <option value=" -gran-matome -granblue-info.com -ruriasokuhou -minigob-matome -guraburu-koryaku -estalucia.com -gurablue.com -gbf-sen.com -matomeguraburu.antenam -gbfsisters">
+      まとめサイト除外</option>
+    <option value="-ID:">除外テスト用</option>
+</select>
+<input type="button" id="button" value="追加"><p>
+<input type="button" id="button_del" value="1単語削除">
+<input type="button" id="button_alldel" value="クリア"></p>
+
+<p>検索オプション:<span id="word"></span></p>
+
+検索サイト <select name="select_engine" onChange="link_gen()">
+  <option value="https://www.google.co.jp/search?q=">google</option>
+  <option value="https://twitter.com/search?src=typd&q=">twitter</option>
+</select><br>
+<font size="+2">
+<a href="./serch.html" target="_brank" id="link_brank">検索</a>
+</font>
+</p><br>
+</form>
+
+
+<!-- <input type="button" value="オープン" onclick="openwin()" />
+<input type="button" value="けす" onclick="closewin()" /> -->
+<!-- <frameset cols="150px,*" frameborder="1">
+  <frameset rows="*,0" frameborder="1">
+    <frame src="./html/menu.html" name="menu">
+  </frameset>
+  <frame src="./html/top.html" name="main">
+
+    <NOFRAMES>
+
+      <BODY>
+        <P>このページを表示するには、フレームをサポートしているブラウザが必要です。</P>
+        <a href="./html/menu.html">メニューはこちら（非推奨）</a>
+      </BODY>
+    </NOFRAMES>
+</frameset> -->
+
+</body>
+<script>
+  serch_list = [];
+  serch_option = ""
+  serch_word = ""
+  window.onload = function () {
+    b = document.getElementById('button');
+    b.addEventListener('click', click_s, false);
+
+    b = document.getElementById('button_gen');
+    b.addEventListener('click', click_gen, false);
+
+    b = document.getElementById('click_ref');
+    b.addEventListener('click', click_ref, false);
+
+    b_del = document.getElementById('button_del');
+    b_del.addEventListener('click', click_del, false);
+
+    b_del = document.getElementById('button_alldel');
+    b_del.addEventListener('click', click_alldel, false); 
+  };
+  function openwin(mode) {
+    menusize=310;
+    menu=window.open("./html/menu.html", "menu", "width="+menusize+",height=600");
+    if(mode == 1){
+    main=window.open("http://game.granbluefantasy.jp/#mypage", "main", "width=500,height=600,left="+120);
+    }
+  }
+  function click_s(){
+      value = document.forms.id_form.select_s.value;
+      add("word",value)
+      }
+      function click_gen(){
+      value = document.forms.id_form.free_form.value+" ";
+      add("word",value)
+      document.forms.id_form.free_form.value="";
+      }
+      function click_ref(){
+        serch_word = document.forms.id_form.free_form.value + "";
+        link_gen();
+      }
+      function add(a,b){
+      serch_list.push(b);
+      word_gen();
+      document.getElementById(a).textContent = serch_option;
+      link_gen();
+      }
+      
+      function link_gen(){
+      link_brank=document.getElementById("link_brank")
+      link_brank.href=document.forms.id_form.select_engine.value + serch_word + " " + serch_option;
+      }
+      function word_gen(){
+      serch_option="";
+      i = serch_list.length;
+      for(var num=0;num<i;num++){
+      serch_option+=serch_list[num]+" ";
+      }
+      }
+      function click_del(){
+      serch_list.pop();
+      word_gen();
+      document.getElementById("word").textContent = serch_option;
+      link_gen();
+      }
+      function click_alldel(){
+      serch_list=[]
+      word_gen();
+      document.getElementById("word").textContent = serch_option;
+      link_gen();
+      }
+
+
+  // サブウインドウCLOSE
+function closewin(){
+  winClose(menu);
+  winClose(main);
+}
+function winClose(winObj){
+  if( (winObj) && (!winObj.closed) ){   //サブウインドウが開かれているか？
+    winObj.close();                     //サブウインドウを閉じる
+  }
+  else{
+   // alert('サブウインドウは開かれていません'); 無いなら無いでいいので非表示に
+  }
+  winObj = null;
+}
+  </script>
+</html >
