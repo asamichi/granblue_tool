@@ -72,8 +72,10 @@
 ここが唯一味気なさ過ぎる感じがある。<br>
 けどグラブルの画像は権利のあれこれとかあるしで結局このまま。<br>
 使い勝手部分に影響無いから優先度落ちてるのも有る。<br>
+<br>
 <img src="https://github.com/asamichi/granblue_tool/blob/master/screen/1.jpg"><br>
 起動。左のが拡張ウインドウ。<br>
+<br>
 <img src="https://github.com/asamichi/granblue_tool/blob/master/screen/2.jpg"><br>
 メニュー選んでるところ。<br>
 項目によって<br>
@@ -82,6 +84,7 @@
 画像は後者。<br>
 グラブルの画面隠れちゃってるけど、<br>
 メニュー選びだした時点で操作完了までグラブル画面の情報は必要無いと思うんで使ってみると気にならない（はず）<br>
+<br>
 <img src="https://github.com/asamichi/granblue_tool/blob/master/screen/3.jpg"><br>
 別窓救援待機使用例。<br>
 素材の周回とかしつつ、<br>
