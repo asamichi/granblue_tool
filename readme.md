@@ -76,8 +76,8 @@
 <img src="https://github.com/asamichi/granblue_tool/blob/master/screen/1.jpg"><br>
 起動。左のが拡張ウインドウ。<br>
 <br>
-<img src="https://github.com/asamichi/granblue_tool/blob/master/screen/2.jpg"><br>
-メニュー選んでるところ。<br>
+<img src="https://github.com/asamichi/granblue_tool/blob/master/screen/2.jpg">
+メニュー選んでるところ。
 項目によって<br>
 項目クリック→画面遷移　のタイプと、<br>
 項目クリック→詳細選択→画面遷移　のタイプがある。<br>
@@ -85,10 +85,11 @@
 グラブルの画面隠れちゃってるけど、<br>
 メニュー選びだした時点で操作完了までグラブル画面の情報は必要無いと思うんで使ってみると気にならない（はず）<br>
 <br>
-<img src="https://github.com/asamichi/granblue_tool/blob/master/screen/3.jpg"><br>
+<img src="https://github.com/asamichi/granblue_tool/blob/master/screen/3.jpg">
 別窓救援待機使用例。<br>
 素材の周回とかしつつ、<br>
 Twitter救援でいいの流れてきたらすぐ入れるように、<br>
 参戦ID画面を横に開いておける。<br>
+
 
 
