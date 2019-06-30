@@ -36,6 +36,7 @@
 　閉じる：別窓救援待機用のウインドウを閉じます<br>
 　　レアな救援が流れてこないか待機している際に、別のことしながら待機する用<br>
 　　周回等しつつ、救援が流れてきたら別窓側で即座に参戦できます<br>
+　　いちいち新しいウインドウで開くとかするの面倒なんで作りました。<br>
 
 ### ー周回用リンク機能
 　登録：周回するクエスト開始直前の、フレンド召喚石選択画面をフォームに入力し、登録ボタンを押してください。<br>
@@ -65,4 +66,26 @@
  　そのまま。両方除外すると、個人の攻略ブログを探しやすくなります。<br>
 ### ー検索サイト：現在googleとTwitterを選べます。<br>
 ### ー検索：指定した条件で検索します<br>
+<br>
+以下、スクリーンショット<br>
+<img src="https://github.com/asamichi/granblue_tool/blob/master/screen/0.jpg"><br>
+ここが唯一味気なさ過ぎる感じがある。<br>
+けどグラブルの画像は権利のあれこれとかあるしで結局このまま。<br>
+使い勝手部分に影響無いから優先度落ちてるのも有る。<br>
+<img src="https://github.com/asamichi/granblue_tool/blob/master/screen/1.jpg"><br>
+起動。左のが拡張ウインドウ。<br>
+<img src="https://github.com/asamichi/granblue_tool/blob/master/screen/2.jpg"><br>
+メニュー選んでるところ。<br>
+項目によって<br>
+項目クリック→画面遷移　のタイプと、<br>
+項目クリック→詳細選択→画面遷移　のタイプがある。<br>
+画像は後者。<br>
+グラブルの画面隠れちゃってるけど、<br>
+メニュー選びだした時点で操作完了までグラブル画面の情報は必要無いと思うんで使ってみると気にならない（はず）<br>
+<img src="https://github.com/asamichi/granblue_tool/blob/master/screen/3.jpg"><br>
+別窓救援待機使用例。<br>
+素材の周回とかしつつ、<br>
+Twitter救援でいいの流れてきたらすぐ入れるように、<br>
+参戦ID画面を横に開いておける。<br>
+
 
