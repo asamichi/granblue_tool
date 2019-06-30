@@ -68,12 +68,12 @@
 ### ー検索：指定した条件で検索します<br>
 <br>
 以下、スクリーンショット<br>
-<img src="https://github.com/asamichi/granblue_tool/blob/master/screen/0.jpg"><br>
+<img src="https://github.com/asamichi/granblue_tool/blob/master/screen/0.jpg">
 ここが唯一味気なさ過ぎる感じがある。<br>
 けどグラブルの画像は権利のあれこれとかあるしで結局このまま。<br>
 使い勝手部分に影響無いから優先度落ちてるのも有る。<br>
 <br>
-<img src="https://github.com/asamichi/granblue_tool/blob/master/screen/1.jpg"><br>
+<img src="https://github.com/asamichi/granblue_tool/blob/master/screen/1.jpg">
 起動。左のが拡張ウインドウ。<br>
 <br>
 <img src="https://github.com/asamichi/granblue_tool/blob/master/screen/2.jpg">
